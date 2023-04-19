@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Complete Responsive Personal Portfolio Website Design</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+   <!-- aos css link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<?php
+
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message" data-aos="zoom-out">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+
+?>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+   <a href="#home" class="logo">Portfolio</a>
+
+   <nav class="navbar">
+      <a href="#home" class="active">home</a>
+      <a href="#about">about</a>
+      <a href="#services">services</a>
+      <a href="#portfolio">portfolio</a>
+      <a href="#contact">contact</a>
+   </nav>
+
+   <div class="follow">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-github"></a>
+   </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="image" data-aos="fade-right">
+      <img src="/Users/nik/Desktop/personal portfolio/images/USER-IMAGE.jpg" alt="">
+   </div>
+
+   <div class="content">
+      <h3 data-aos="fade-up">Hi, i am Stuart the minion</h3>
+      <span data-aos="fade-up">web designer & developer</span>
+      <p data-aos="fade-up">As a web developer, I am passionate about creating engaging and user-friendly web experiences. With expertise in front-end and back-end development, I strive to create responsive and accessible websites that meet the needs of clients and users alike. Through my portfolio, you can explore some of my recent projects and see my skills in action.    </p>
+      <a data-aos="fade-up" href="#about" class="btn">about me</a>
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h2 class="heading" data-aos="fade-up"> <span>  about <span> </h2>
+
+   <div class="biography">
+
+      <p data-aos="fade-up">As a web developer, I am a creative and curious individual who loves to experiment with new technologies and push the boundaries of what is possible on the web. My playful and fun-loving personality is reflected in my work, where I enjoy creating engaging and interactive websites that captivate and delight users. While I may have a mischievous streak, I take my work seriously and am always striving to improve my skills and stay up-to-date with the latest trends and best practices in web development.
+
+
+
+      </p>
+
+      <div class="bio">
+         <h3 data-aos="zoom-in"> <span>name : </span> Stuart</h3>
+         <h3 data-aos="zoom-in"> <span>email : </span> Stuart@gmail.com </h3>
+         <h3 data-aos="zoom-in"> <span>address : </span> mumbai, india </h3>
+         <h3 data-aos="zoom-in"> <span>phone : </span> +91957545766 </h3>
+         <h3 data-aos="zoom-in"> <span>age : </span> 24 million years </h3>
+         <h3 data-aos="zoom-in"> <span>experience : </span> 2+ years </h3>
+      </div>
+
+      <a href="#" class="btn" data-aos="fade-up">download CV</a>
+
+   </div>
+   
+   <div class="skills" data-aos="fade-up">
+
+      <h1 class="heading"> <span>skills</span> </h1>
+
+      <div class="progress">
+         <div class="bar" data-aos="fade-left"> <h3><span>HTML</span> <span>90%</span></h3> </div>
+         <div class="bar" data-aos="fade-right"> <h3><span>CSS</span> <span>80%</span></h3> </div>
+         <div class="bar" data-aos="fade-left"> <h3><span>JavaScript</span> <span>65%</span></h3> </div>
+         <div class="bar" data-aos="fade-right"> <h3><span>PHP</span> <span>75%</span></h3> </div>
+      </div>
+
+   </div>
+
+   <div class="edu-exp">
+
+      <h1 class="heading" data-aos="fade-up"> <span>education & experience</span> </h1>
+
+      <div class="row">
+
+         <div class="box-container">
+
+            <h3 class="title" data-aos="fade-right">education</h3>
+
+            <div class="box" data-aos="fade-right">
+               <span>( 2016 - 2020 )</span>
+               <h3>Bachelor's Degree in Computer Science</h3>
+               <h2>Manipal University</h2>
+               <p><During my undergraduate studies, I gained a strong foundation in computer science, including programming languages such as Java, C++, and Python, as well as databases, operating systems, and algorithms./p>
+            </div>
+
+            <div class="box" data-aos="fade-right">
+               <span>( 2020 - 2021 )</span>
+               <h3>web developer certification</h3>
+               <p> coursera,eduEX.</p>
+            </div>
+
+            <div class="box" data-aos="fade-right">
+               <span>( 2021 - 2022 )</span>
+               <h3>graphic design certification</h3>
+               <p>coursera,eduEX.</p>
+            </div>
+
+         </div>
+
+         <div class="box-container">
+
+            <h3 class="title" data-aos="fade-left">experience</h3>
+
+            <div class="box" data-aos="fade-left">
+               <span>( september,2020 to december,2020 )</span>
+               <h3>front-end developer intern at xyz corps</h3>
+               <p>As a front-end development intern, I worked on implementing website designs and creating user interfaces using HTML, CSS, and JavaScript. I also collaborated with other developers and designers to ensure the website or application was functional and user-friendly..</p>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+               <span>( jan,2021 - september,2021)</span>
+               <h3>back-end developer intern at xyz limited</h3>
+               <p>As a backend development intern, I worked on building and maintaining the server-side of web applications. I primarily used programming languages such as Java, Python, or PHP to write server-side code, along with tools like databases and APIs.I learned about server architecture, database design, and optimizing code for scalability and security.</p>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+               <span>( january,2022 - present)</span>
+               <h3>full-stack developer at xyz corps</h3>
+               <p>As a full stack development intern, I worked on both the front-end and backend components of web applications. I was responsible for implementing user interfaces using HTML, CSS, and JavaScript, as well as building server-side functionality using programming languages like Java, Python, or PHP. </p>
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+   <h1 class="heading" data-aos="fade-up"> <span>services</span> </h1>
+
+   <div class="box-container">
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fas fa-code"></i>
+         <h3>web development</h3>
+         <p></p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fas fa-paint-brush"></i>
+         <h3>graphic design</h3>
+         <p></p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fab fa-bootstrap"></i>
+         <h3>bootstrap</h3>
+         <p></p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fas fa-chart-line"></i>
+         <h3>seo marketing</h3>
+         <p></p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fas fa-bullhorn"></i>
+         <h3>digital marketing</h3>
+         <p></p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fab fa-wordpress"></i>
+         <h3>wordpress</h3>
+         <p></p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+   <h1 class="heading" data-aos="fade-up"> <span>portfolio</span> </h1>
+
+   <div class="box-container">
+
+      <div class="box" data-aos="zoom-in">
+         <img src="images/img-1.jpg" alt="">
+         <h3>web development</h3>
+         <span>( 2020 - 2022 )</span>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <img src="images/img-2.jpg" alt="">
+         <h3>web development</h3>
+         <span>( 2020 - 2022 )</span>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <img src="images/img-3.jpg" alt="">
+         <h3>web development</h3>
+         <span>( 2020 - 2022 )</span>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <img src="images/img-4.jpg" alt="">
+         <h3>web development</h3>
+         <span>( 2020 - 2022 )</span>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <img src="images/img-5.jpg" alt="">
+         <h3>web development</h3>
+         <span>( 2020 - 2022 )</span>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <img src="images/img-6.jpg" alt="">
+         <h3>web development</h3>
+         <span>( 2020 - 2022 )</span>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <h1 class="heading" data-aos="fade-up"> <span>contact me</span> </h1>
+
+   <form action="" method="post">
+      <div class="flex">
+         <input data-aos="fade-right" type="text" name="name" placeholder="enter your name" class="box" required>
+         <input data-aos="fade-left" type="email" name="email" placeholder="enter your email" class="box" required>
+      </div>
+      <input data-aos="fade-up" type="number" min="0" name="number" placeholder="enter your number" class="box" required>
+      <textarea data-aos="fade-up" name="message" class="box" required placeholder="enter your message" cols="30" rows="10"></textarea>
+      <input type="submit" data-aos="zoom-in" value="send message" name="send" class="btn">
+   </form>
+
+   <div class="box-container">
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fas fa-phone"></i>
+         <h3>phone</h3>
+         <p>+91957545766</p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fas fa-envelope"></i>
+         <h3>email</h3>
+         <p>stuart@gmail.com</p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>address</h3>
+         <p>mumbai, india - 400104</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<!-- aos js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+
+   AOS.init({
+      duration:800,
+      delay:300
+   });
+
+</script>
+   
+</body>
+</html>
